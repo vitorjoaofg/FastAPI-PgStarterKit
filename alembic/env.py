@@ -23,6 +23,12 @@ fileConfig(config.config_file_name)
 # target_metadata = mymodel.Base.metadata
 # target_metadata = None
 
+
+# To run the migrations locally, uncomment the following lines
+# import sys
+# sys.path.append("/Users/joaovitor/Documents/Projects/FastAPI-PgStarterKit/app")
+# from db.base_class import Base
+
 from app.db.base import Base  # noqa
 
 target_metadata = Base.metadata
